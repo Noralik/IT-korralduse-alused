@@ -5,7 +5,7 @@ pipeline {
         stage('Hello') {
             steps {
                 sh 'docker build . -t tripitropa'
-		sh 'docker run -p 4001:4000 -d tripitropa
+		sh 'docker run -p 4001:4000 -d tripitropa'
             }
         }
     }
